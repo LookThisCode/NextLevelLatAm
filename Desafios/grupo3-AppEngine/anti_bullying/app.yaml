@@ -1,0 +1,11 @@
+application: anti-bullying
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /statics
+  static_dir: statics
+  
+- url: /.*
+  script: consola.py
