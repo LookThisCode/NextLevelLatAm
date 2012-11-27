@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Hello App Engine</title>
+</head>
+
+<body>
+	<h1>+Next Level</h1>
+	<h2>Grupo 4: + Cuatro Plus</h2>
+
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold;">Available Servlets:</td>
+		</tr>
+		<tr>
+			<td><a href="cuatroplus">CuatroPlus</a></td>
+		</tr>
+	</table>
+
+	<span>HTML5 Canvas Image Example :)</span>
+	<canvas id="myCanvas" width="578" height="400"></canvas>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		var imageObj = new Image();
+
+		imageObj.onload = function() {
+			context.drawImage(imageObj, 69, 50);
+		};
+		imageObj.src = 'http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
+	</script>
+</body>
+</html>
