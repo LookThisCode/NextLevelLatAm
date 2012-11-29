@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">GreenTeamSmiMobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_frm_map">FrmMap</string>
+    <string name="lblMessage">Empeza a reciclar ya</string>
+	<string name="btnRecycle">Reciclar</string>
+	<string name="lblInfo">¿En qué lugar reciclar?</string>
+    
+</resources>
