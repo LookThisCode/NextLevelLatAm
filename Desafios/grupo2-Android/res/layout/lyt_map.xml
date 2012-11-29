@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">  
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">         
+        
+        <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:background="#CFCFCF">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/lblMessage"
+	    		android:id="@+id/lblMessage"
+	    		android:paddingLeft="5dp"
+	    		android:textColor="#000"	    		
+	    		/>
+	        
+	        <Button 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="@string/btnRecycle"
+	            android:id="@+id/btnRecycle"
+	           	android:paddingRight="5dp"
+	           	android:layout_gravity="right"
+	           	android:layout_weight="1"
+	           	android:onClick="btnRecycleSetOnClickListener"/>      
+    	</LinearLayout>
+    	
+      	<TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblInfo"
+            android:background="#CFCFCF"
+            android:paddingLeft="5dp"
+            android:id="@+id/lblInfo"
+            android:textColor="#000"/>
+        
+    </LinearLayout>
+    
+	
+    <com.google.android.maps.MapView
+        android:id="@+id/mvRecyclingPoints"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:clickable="true"
+        android:apiKey="0Xscgk5NLcv7xHhD4TLauLx6g8bKzI0uEbDxltg"/>    
+    
+</LinearLayout>
