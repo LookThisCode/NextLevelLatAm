@@ -1,0 +1,134 @@
+html {
+	height: 100%
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	color: #666;
+}
+
+
+#map_canvas {
+	top:10%;
+	height: 90%;
+	width: 100%;
+	;
+}
+
+#upNav {
+	background: white;
+	border-bottom: 1px solid #666;
+	border-color: #E5E5E5;
+	float: left;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	z-index: 3;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#logo {
+	background: url('../Images/logo_small.png') no-repeat;
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+	float:left;
+	display:block;
+}
+
+
+#name {
+	background: url('../Images/name_small.png') no-repeat;
+	height: 25px;
+	width: 139px;
+	margin: auto;
+	float:left;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+#leftNav{
+	background: white;
+	border-left: 1px solid #666;
+	border-color: #E5E5E5;
+	float: right;
+	position: absolute;
+	height: 100%;
+	width: 200px;
+	right: 0px;
+	z-index: 2;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#searchLocation {
+	float: left;
+	margin-left: 20%;
+}
+
+#searchLocation > input{
+	background: white;
+	border: 1px solid #D9D9D9;
+	border-top: 1px solid silver;
+	float: left;
+	font-size: 20px;
+	padding:5px;
+	margin: 10px;
+}
+
+#nav_buttons{
+	float: left;
+	width: 100%;
+}
+
+#description {
+	float: left;
+	color:black;
+	font-family:arial;
+	font-size: 13px;
+	margin-top: 32%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 18px;
+	text-decoration: none;
+	text-shadow:1px 1px 0px #1570cd;
+	margin: 10px;
+}
+
+#btn_pilas {
+
+}
+
+#btn_ebasura {
+
+}
+
+#btn_papeles {
+
+}
+
+#btn_login {
+	float: right;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+	<meta charset="utf-8">
+	<title>GreenTeam - Donde reciclo?</title> 
+	
+	<link rel="stylesheet" href="css/General.css" />
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/ServerPost.js"></script>
+	<script src="js/GeneralFunctions.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36642208-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+
+	</head> 
+	<body onload="loadScript()">
+		<nav>
+			<div id="upNav">
+				<div id="name"></div>
+				<div id="logo"></div>
+				<div id="searchLocation">
+					<input id="field_searchlocation" spellcheck="false" autocomplete="off"></input>
+				</div>
+				<a href="#" id="btn_login" class="button">Ingresar</a>
+			</div>
+			<div id="leftNav">
+				<div id="description">Green Team fomenta la conciencia ecológica, permitiendo encontrar los centros de reciclaje cercanos donde quiera que estés. Los usuarios pueden conocerse y forjar una comunidad en torno a esta problemática.</div>
+				<div id="nav_buttons">
+					<a href="#" id="btn_pilas" class="button">Pilas</a>
+					<a href="#" id="btn_ebasura" class="button">Basura electrónica</a>
+					<a href="#" id="btn_papeles" class="button">Papeles y cartones</a>
+				</div>
+			</div>	
+		</nav>
+		<div id="map_canvas"></div>
+		<section></section>
+
+	</body>
+</html>
