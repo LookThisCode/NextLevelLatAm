@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+	<meta charset="utf-8">
+	<title>GreenTeam - Donde reciclo?</title> 
+	
+	<link rel="stylesheet" href="css/General.css" />
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/ServerPost.js"></script>
+	<script src="js/GeneralFunctions.js"></script>
+	<script src="js/GFunctions.js"></script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36642208-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+
+	</head> 
+	<body onload="loadScript()">
+		<nav>
+			<div id="upNav">
+				<div id="name"></div>
+				<div id="logo"></div>
+				<div id="searchLocation">
+					<span class="locationReset" title=""></span>
+					<input id="field_searchlocation" spellcheck="false" autocomplete="off"></input>
+					<input type="submit" class="submit" value="submit" />
+				</div>
+				<a href="#" id="btn_login" class="button">Únete a la comunidad</a>
+			</div>
+			<div id="float_nav">
+				<div id="nav_header">
+					<div id="description">Encuentra centros de reciclaje cercanos donde quiera que estés. Forma parte de la comunidad del reciclaje.</div>
+					<div id="nav_buttons">
+						<div>
+							<input type="checkbox" name="chk_Pilas" id="chk_Pilas" value="yes" checked>
+							<label>Pilas</label>
+						</div>
+						<div>
+							<input type="checkbox" name="chk_eBasura" id="chk_eBasura" value="yes" checked>
+							<label>Basura electronica</label>
+						</div>
+						<div>
+							<input type="checkbox" name="chk_Papel" id="chk_Papel" value="yes" checked>
+							<label>Papeles y cartones</label>
+						</div>
+					</div>
+				</div>
+				<ul id="lugares">
+				</ul>
+			</div>
+			<div id="leftNav">
+				<ul id="socialStream">
+					<li id="User1">
+						<div class="Foto_Perfil"></div>
+						<div class="Nombre">Marcela Cocco</div>
+						<div class="Post">Recicló 20 pilas en Centro Energía</div>
+						<div class="star"></div>
+					</li>
+					<li id="User2">
+						<div class="Foto_Perfil"></div>
+						<div class="Nombre">Santiago Figueroa</div>
+						<div class="Post">Recicló 5 Kg de papel en Papelera del Plata</div>
+						<div class="star"></div>
+					</li>
+					<li id="User3">
+						<div class="Foto_Perfil"></div>
+						<div class="Nombre">Daniel Anzawa</div>
+						<div class="Post">Recicló 2 Computadoras en Hard Recycle</div>
+					</li>
+					<li id="User4">
+						<div class="Foto_Perfil"></div>
+						<div class="Nombre">Juan Manuel Zarza</div>
+						<div class="Post">Reciclo 3 Kg de Papel en Libreria Tandil</div>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+		<div id="map_canvas"></div>
+		<section></section>
+
+	</body>
+</html>

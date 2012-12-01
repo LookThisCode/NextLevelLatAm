@@ -1,0 +1,318 @@
+html {
+	height: 100%
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	color: #666;
+	overflow: hidden;
+}
+
+
+#map_canvas {
+	top:10%;
+	height: 90%;
+	width: 100%;
+	;
+}
+
+#upNav {
+	background: white;
+	border-bottom: 1px solid #666;
+	border-color: #E5E5E5;
+	float: left;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	z-index: 3;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+#logo {
+	background: url('../Images/logo_small.png') no-repeat;
+	background-size: 40px auto;
+	height: 50px;
+	width: 50px;
+	margin-left: 5px;
+	margin-top: 5px;
+	float:left;
+	display:block;
+}
+
+
+#name {
+	background: url('../Images/name_small.png') no-repeat;
+	height: 25px;
+	width: 139px;
+	margin: auto;
+	float:left;
+	margin-left: 85px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+#leftNav{
+	background: #CCC;
+	background: rgba(0, 0, 0, 0.1);
+	float: right;
+	position: absolute;
+	height: 100%;
+	width: 200px;
+	right: 0px;
+	top: 10%;;
+	z-index: 2;
+	overflow-y: auto;
+}
+
+#leftNav > ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#leftNav > ul > li{
+	background: white;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	height: 35px;
+}
+
+#searchLocation {
+	float: left;
+	margin-left: 20%;
+}
+
+.locationReset{
+	background: url('/Images/location.png') 0 0 no-repeat;
+	background-size: 18px auto;
+	display: block;
+	height: 18px;
+	left: 0;
+	opacity: 0.6;
+	top: 12px;
+	width: 18px;
+	float: left;
+	margin-top: 15px;
+}
+
+
+
+#field_searchlocation{
+	background: white;
+	border: 1px solid #D9D9D9;
+	border-top: 1px solid silver;
+	float: left;
+	font-size: 15px;
+	padding:5px;
+	margin: 10px;
+	width: 300px;
+}
+
+#nav_buttons{
+	padding-top: 10px;
+	padding-left: 50px;
+}
+
+#nav_buttons > div{
+	display: block;
+}
+
+#nav_header {
+	color:black;
+	font-family:arial;
+	font-size: 15px;
+	background: white;
+	
+	padding: 10px;
+	position: relative;
+}
+
+input[type="checkbox"]{
+
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	vertical-align: bottom;
+	background: white;
+	border: 1px solid gainsboro;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background-color:#3d94f6;
+	border:1px solid #337fed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:7px 18px;
+	text-decoration: none;
+	text-shadow:1px 1px 0px #1570cd;
+	margin: 10px;
+}
+
+#btn_login {
+	float: right;
+}
+
+input.submit{
+	width:16px;
+	height:16x;
+	display:block;
+	overflow:hidden;
+	text-indent:-999px; /* To remove any default text on the button*/
+	line-height:16px; /* required for IE */
+	background:url('../Images/search-sprite.gif') no-repeat 0 0; /* This will display the search icon by default */
+	cursor:pointer; /* Hand cursor for the normal state */
+	border: none;
+	float: left;
+	margin-top: 15px;
+	padding: 0;
+}
+
+ 
+input.submit:hover{
+	background-position: 0 -16px; /* This will display the dark search icon on hover */
+}
+
+ 
+input.submit:active{
+	background-position: 0 -32px; /* And finally, this is the one that shows the loader */
+	cursor:wait; /* Shows the wait cursor on click */
+}
+
+
+#float_nav{
+	background: #CCC;
+	background: rgba(0, 0, 0, 0.1);
+	float: left;
+	position: absolute;
+	height: 100%;
+	width: 300px;
+	left: 20px;
+	top: 10%;;
+	z-index: 2;
+	overflow-y: auto;
+}
+
+#float_nav > ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	margin-top:10px;
+}
+
+#float_nav > ul > li{
+	background: white;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+	margin-top: 1000px;s
+}
+
+li :hover{
+	background: #b9d0f2;
+}
+
+.Direccion{
+	font-size: 12px;
+}
+
+
+.Image
+{
+	background: url('../Images/not-found.png') no-repeat;
+	background-size: 35px auto;
+	height: 50px;
+	width: 45px;
+	float:left;
+	display:block;
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#socialStream > li > .Nombre
+{
+	font-size: 12px;
+	color: black;
+}
+
+#socialStream > li > .Post
+{
+	font-size: 10px;
+}
+
+
+
+.Foto_Perfil
+{
+	height: 50px;
+	width: 45px;
+	float:left;
+	display:block;
+	opacity:0.6;
+	filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#User1 > .Foto_Perfil
+{
+	background: url('../Images/Profile_Marcela.png') no-repeat;
+		background-size: 35px auto;
+}
+
+#User2 > .Foto_Perfil
+{
+	background: url('../Images/Profile_Santiago.png') no-repeat;
+		background-size: 35px auto;
+}
+
+#User3 > .Foto_Perfil
+{
+	background: url('../Images/Profile_Daniel.png') no-repeat;
+		background-size: 35px auto;
+}
+
+#User4 > .Foto_Perfil
+{
+	background: url('../Images/Profile_Juan.png') no-repeat;
+		background-size: 35px auto;
+}
+
+
+
+.selected
+{
+	background: #b7d2ff;
+}
+
+
+.star
+{
+	background: url('../Images/star.png') no-repeat;
+	background-size: 20px auto;
+	height: 20px;
+	width: 20px;
+	float: left;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}

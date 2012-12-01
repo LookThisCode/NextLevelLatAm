@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes
+  autoGenerate="false">
+    <datastore-index kind="BusquedasRealizadas" ancestor="false">
+        <property name="Ubicacion" direction="asc" />
+        <property name="Radio" direction="desc" />
+        <property name="Categorias" direction="desc" />
+        <property name="Fecha" direction="desc" />
+    </datastore-index>
+</datastore-indexes>
