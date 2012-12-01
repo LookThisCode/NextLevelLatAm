@@ -1,0 +1,4 @@
+cron:
+- description: daily summary job
+  url: /task/follow
+  schedule: every 1 minutes
